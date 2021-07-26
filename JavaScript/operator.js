@@ -1,6 +1,6 @@
 // 1. String concatenation
-console.log("my" + "cat");
-console.log("1" + 2);
+console.log('my' + 'cat');
+console.log('1' + 2);
 console.log(`string literals: 1 + 2 = ${1 + 2}`);
 
 //2. Numeric operators
@@ -52,7 +52,7 @@ console.log(`and: ${value1 && value2 && check()}`);
 function check() {
   for (let i = 0; i < 10; i++) {
     //wasting time
-    console.log("🤮");
+    console.log('🤮');
   }
   return true;
 }
@@ -61,7 +61,7 @@ function check() {
 console.log(!value1);
 
 // 7. Equality
-const stringFive = "5";
+const stringFive = '5';
 const numberFive = 5;
 
 // == loose equality, with type conversion
@@ -73,8 +73,8 @@ console.log(stringFive === numberFive); // flase
 console.log(stringFive !== numberFive); // true
 
 // object equality by reference
-const jong1 = { name: "jong" };
-const jong2 = { name: "jong" };
+const jong1 = { name: 'jong' };
+const jong2 = { name: 'jong' };
 const jong3 = jong1;
 console.log(jong1 == jong2); // false
 console.log(jong1 === jong2); // false
@@ -83,41 +83,41 @@ console.log(jong1 === jong3); // true
 // eqaulity - puzzler
 console.log(0 == false); // true
 console.log(0 === false); // false
-console.log("" == false); // true
-console.log("" === false); // false
+console.log('' == false); // true
+console.log('' === false); // false
 console.log(null == undefined); // true
 console.log(null === undefined); // false
 
 // 8. Conditional operators: if
 // if, else if, else
-const name = "jong";
-if (name === "jong") {
-  console.log("Welcome, Jong!");
-} else if (name === "coder") {
-  console.log("You are amazing coder");
+const name = 'jong';
+if (name === 'jong') {
+  console.log('Welcome, Jong!');
+} else if (name === 'coder') {
+  console.log('You are amazing coder');
 } else {
-  console.log("unkwnon");
+  console.log('unkwnon');
 }
 
 // 9. Ternary operator: ?
 // condition ? value1 : value2;
-console.log(name === "jong" ? "yes" : "no");
+console.log(name === 'jong' ? 'yes' : 'no');
 
 // 10. Switch statement
 // use for multiple if checks
 // use for enum-like value check
 // use for multiple type checks in TS
-const browser = "IE";
+const browser = 'IE';
 switch (browser) {
-  case "IE":
-    console.log("go away!");
+  case 'IE':
+    console.log('go away!');
     break;
-  case "Chrome":
-  case "Firefox":
-    console.log("love you!");
+  case 'Chrome':
+  case 'Firefox':
+    console.log('love you!');
     break;
   default:
-    console.log("same all!");
+    console.log('same all!');
     break;
 }
 
